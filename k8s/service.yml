@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: xjsero
+  name: eorkwm
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "xjsero"
+  - name: "eorkwm"
     port: 8080
   selector:
-    app: xjsero
+    app: eorkwm
