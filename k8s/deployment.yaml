@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: huwero
+  name: sokmer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: huwero
+      app: sokmer
   template:
     metadata:
       labels:
-        app: huwero
+        app: sokmer
     spec:
       containers:
-      - image: okteto.dev/huwero:latest
-        name: huwero
+      - image: okteto.dev/sokmer:latest
+        name: sokmer
         ports:
         - containerPort: 8080
         env:
