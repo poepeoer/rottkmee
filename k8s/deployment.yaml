@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sokmer
+  name: makerr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sokmer
+      app: makerr
   template:
     metadata:
       labels:
-        app: sokmer
+        app: makerr
     spec:
       containers:
-      - image: okteto.dev/sokmer:latest
-        name: sokmer
+      - image: okteto.dev/makerr:latest
+        name: makerr
         ports:
         - containerPort: 8080
         env:
