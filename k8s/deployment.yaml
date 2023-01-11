@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xjsero
+  name: eorkwm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xjsero
+      app: eorkwm
   template:
     metadata:
       labels:
-        app: xjsero
+        app: eorkwm
     spec:
       containers:
-      - image: okteto.dev/xjsero:latest
-        name: xjsero
+      - image: okteto.dev/eorkwm:latest
+        name: eorkwm
         ports:
         - containerPort: 8080
         env:
