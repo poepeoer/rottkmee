@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makerr
+  name: xjsero
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: makerr
+      app: xjsero
   template:
     metadata:
       labels:
-        app: makerr
+        app: xjsero
     spec:
       containers:
-      - image: okteto.dev/makerr:latest
-        name: makerr
+      - image: okteto.dev/xjsero:latest
+        name: xjsero
         ports:
         - containerPort: 8080
         env:
