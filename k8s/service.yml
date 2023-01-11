@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sokmer
+  name: makerr
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "sokmer"
+  - name: "makerr"
     port: 8080
   selector:
-    app: sokmer
+    app: makerr
