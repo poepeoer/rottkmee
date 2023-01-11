@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sraybery
+  name: huwero
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sraybery
+      app: huwero
   template:
     metadata:
       labels:
-        app: sraybery
+        app: huwero
     spec:
       containers:
-      - image: okteto.dev/sraybery:latest
-        name: sraybery
+      - image: okteto.dev/huwero:latest
+        name: huwero
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.vecteezy.com"
+          value: "icook.tw"
         - name: Vless_UUID
-          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+          value: "2800e0c1-4f46-45be-b621-83750d5b2ebe"
         - name: Vless_Path
-          value: "/ihsfbcvu"
+          value: "/2800e0c1-4f46-45be-b621-83750d5b2ebe"
         - name: Vmess_UUID
-          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+          value: "d398eebe-3c19-4105-a335-54ab1028af03"
         - name: Vmess_Path
-          value: "/sdxcweiu"
+          value: "/d398eebe-3c19-4105-a335-54ab1028af03"
         - name: Share_Path
           value: "/Share204"
