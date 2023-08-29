@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "mirror.umd.edu"
         - name: Vless_UUID
           value: "2800e0c1-4f46-45be-b621-83750d5b2ebe"
         - name: Vless_Path
